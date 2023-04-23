@@ -1,0 +1,159 @@
+.works{
+    background-color: crimson;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     height: calc(100vh-70px);
+    
+     
+    
+    
+}
+@media only screen and (max-width:768px){
+    .works{
+        margin: 70px 0px;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.works .arrow{
+    height: 50px;
+    position:absolute;
+    cursor: pointer;
+    margin-top: 120px;
+}
+@media only screen and (max-width:768px){
+    .works .arrow{
+        display: none;
+    }
+}
+.works .leftarrow{
+    left: 100px;
+    transform: rotateY(180deg);
+}
+.works .rightarrow{
+    right: 100px;
+}
+.works .slider{
+   
+   position: absolute;
+height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+left:0;
+}
+@media only screen and (max-width:768px){
+    .works .slider{
+       height: 100vh;
+      
+       flex-direction: column;
+       justify-content: center;
+      
+       
+    }
+}
+
+.works .slider .container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    
+    
+   
+}
+
+.works .slider .container .item{
+    width: 90%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 60px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+}
+@media only screen and (max-width:768px){
+    .works .slider .container .item {
+      width: 90%;
+      height: 220px;
+      margin-top: 50px;
+      border-radius: 5px;
+    }
+}
+
+.works .slider .container .item .left{
+  flex: 4;
+  
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item .left .leftContainer{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.works .slider .container .item .left .leftContainer .imgContainer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(248, 165, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+@media only screen and (max-width:768px){
+    .works .slider .container .item .left .leftContainer .imgContainer{
+       
+        width: 60px;
+        height: 60px;
+    }
+}
+.works .slider .container .item .left .leftContainer .imgContainer img{
+   width: 45px;
+  
+   
+}
+.works .slider .container .item .left .leftContainer  h2{
+font-size: 20px;
+}
+.works .slider .container .item .left .leftContainer  p{
+font-size: 15px;
+}
+@media only screen and (max-width:768px){
+    .works .slider .container .item .left .leftContainer  p{
+        display: none;
+        }
+}
+.works .slider .container .item .left .leftContainer  span{
+font-size: 25px;
+font-weight: bold;
+text-decoration: underline;
+cursor: pointer;
+
+}
+
+
+.works .slider .container .item .right{
+    flex:8;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.works .slider .container .item .right img{
+    width: 400px;
+    transform: rotate(-10deg);
+}

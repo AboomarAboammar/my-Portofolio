@@ -1,0 +1,157 @@
+.testmonials{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: calc(100%vh-75px);
+ 
+}
+@media only screen and (max-width:768px){
+    .testmonials{
+        justify-content: center;
+        height: 100%;
+       
+      
+    }}
+
+
+h1{
+    font-size: 50px;
+    margin-top: 60px;
+   
+}
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 25px;
+        margin-bottom: 35px;
+      
+    }
+}
+.testmonials .container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width:768px){
+   .testmonials .container{
+        flex-direction: column;
+       
+      
+
+    }
+}
+.container .card{
+    width: 250px;
+    height: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 10px;
+    top: 0;
+    margin-bottom: 70px;
+    transition: all 1s ease;
+}
+@media only screen and (max-width:768px){
+    .testmonials .container .card{
+        width: 250px;
+        height: 210px;
+        margin-bottom: 20px;
+        
+        
+      
+       
+     }}
+.container .card:hover{
+transform: scale(1.1);
+}
+.container .featured{
+    width: 275px;
+    height: 80%;
+    margin:0px 20px 60px 20px;
+
+}
+@media only screen and (max-width:768px){
+    .testmonials .container .featured{
+        width: 250px;
+         height: 200px;
+         margin-bottom:10px;
+         
+       
+     }}
+.top{
+   display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top .left{
+height: 25px;
+
+}
+.top .right{
+    height: 25px;
+    }
+.top .user{
+    margin: 20px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        }
+        @media only screen and (max-width:768px){
+          .top .user{
+                 width: 40px;
+                 height: 40px;
+             }}
+       .center{
+          border-radius: 10px;
+          margin: 40px 0px;
+          
+            padding: 10px;
+            background-color:rgb(233, 215, 219);
+        }
+        @media only screen and (max-width:768px){
+           .center{
+                 font-size: 12px;
+                 padding: 5px;
+                 margin-bottom: 20px;
+                 
+                 
+             }}
+        .bottom{
+            
+            
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @media only screen and (max-width:768px){
+           .bottom{
+                 align-items:center;
+                display: flex;
+                 justify-content: space-between;
+                 flex-direction: row;
+                margin-bottom: 15px;
+                
+             }}
+        .bottom h4{
+            color: gray;
+            
+        }
+        @media only screen and (max-width:768px){
+            .bottom h4{
+                font-size: 13px;
+            }
+        }
+        .bottom h3{
+            font-weight:normal;
+        }
+        

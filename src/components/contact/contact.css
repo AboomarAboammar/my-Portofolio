@@ -1,0 +1,88 @@
+.contact{
+    background-color:white;
+    
+       display: flex;
+}
+@media only screen and (max-width:1140px){
+    .contact{
+        flex-direction: column;
+    }
+}
+.contact .left{
+    flex: 1;
+}
+.left img{
+height: 80%;
+overflow: hidden;
+}
+@media only screen and (max-width:768px){
+    .left img{ height: 100%;
+}}
+.contact .right{
+  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    justify-content: center;
+}
+.contact .right h2{
+    font-size: 40px;
+}
+.contact .right form{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+.contact .right form input{
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+}
+@media only screen and (max-width:768px){
+    .contact .right form input{
+        width: 250px;
+        height: 25px;
+        border: 1px solid black;
+    }
+}
+.contact .right form textarea{
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+}
+@media only screen and (max-width:768px){
+    .contact .right form textarea{
+        width: 250px;
+        height: 200px;
+    }
+}
+.contact .right form button{
+   
+    width: 150px;
+    height: 30px;
+    color: white;
+    padding: 7px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: crimson;
+}
+@media only screen and (max-width:768px){
+    .contact .right form button{
+        width: 90px;
+        height: 30px;
+    }
+}
+.contact .right form button:focus{
+    outline:none;
+}
+.contact .right form h3{
+    color:#008000;
+    
+    
+}
