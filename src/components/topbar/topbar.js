@@ -1,25 +1,44 @@
 import React from 'react'
 import "./topbar.css"
-import { Mail, Person } from '@mui/icons-material';
-
+import { Mail, Phone } from '@mui/icons-material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Topbar = ({open,setOpen}) => {
+
+   const handleCall = () => {
+      window.location.href = "tel:+201113756009";
+    };
   return (
   
       
     <div className={"topbar "+ (open && "activ")}>
        <div className='wrapper'>
         <div className='left'>
-            <a href='#intro' className='logo'>junior..Intern...</a>
+            <a href='#intro' className='logo'>junior...</a>
         
         
         <div className='itemcontainer'>
-           <Person className='icon'/>
-           <span>+201113756009</span>
+           <Phone  className='icon'/>
+           <span onClick={handleCall} style={{ cursor: 'pointer', color: 'green', textDecoration: 'underline' }}>
+    Call Me
+    </span>
         </div>
         <div className='itemcontainer'>
            <Mail className='icon'/>
-           <span>aboomaraboammar@gmail.com</span>
+           <span>mokhtarmohammed101@gmail.com</span>
         </div>
+         <div className='itemcontainer'>
+         
+         <a href="https://github.com/AboomarAboammar" target="_blank" rel="noopener noreferrer">
+           <GitHubIcon  className='icon'/>
+         </a>
+       </div>
+       <div className='itemcontainer'>
+         
+       <a href="https://www.linkedin.com/in/mokhtar-mohammed-29b80624b/" target="_blank" rel="noopener noreferrer">
+         <LinkedInIcon  className='icon'/>
+       </a>
+     </div>
        </div>
        <div className='right'>
         <div className='hamburger' onClick={()=>setOpen(!open)}>

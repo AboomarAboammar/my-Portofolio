@@ -1,157 +1,144 @@
-.testmonials{
-    background-color:white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    height: calc(100%vh-75px);
+.testmonials {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 30px 0;
+  width: 100vw;
+  height:100vh;
+}
+
+.testmonials .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; 
+  padding: 0 10px; 
+  box-sizing: border-box; 
  
+  height: 100vh;
 }
-@media only screen and (max-width:768px){
-    .testmonials{
-        justify-content: center;
-        height: 100%;
-       
-      
-    }}
 
+.testmonials h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.testmonials .card {
+  width: 280px;
+  height: 280px; 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  text-align: center;
+}
 
-h1{
-    font-size: 50px;
-    margin-top: 60px;
-   
-}
-@media only screen and (max-width:768px){
-    h1{
-        font-size: 25px;
-        margin-bottom: 35px;
-      
-    }
-}
-.testmonials .container{
-    width:100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-@media only screen and (max-width:768px){
-   .testmonials .container{
-        flex-direction: column;
-       
-      
-
-    }
-}
-.container .card{
-    width: 250px;
-    height: 60%;
+@media only screen and (max-width: 768px) {
+  .testmonials h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .testmonials .card {
+    width: 300px;
+    height: 210px; 
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px -5px black;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    padding: 10px;
-    top: 0;
-    margin-bottom: 70px;
-    transition: all 1s ease;
-}
-@media only screen and (max-width:768px){
-    .testmonials .container .card{
-        width: 250px;
-        height: 210px;
-        margin-bottom: 20px;
-        
-        
-      
-       
-     }}
-.container .card:hover{
-transform: scale(1.1);
-}
-.container .featured{
-    width: 275px;
-    height: 80%;
-    margin:0px 20px 60px 20px;
-
-}
-@media only screen and (max-width:768px){
-    .testmonials .container .featured{
-        width: 250px;
-         height: 200px;
-         margin-bottom:10px;
-         
-       
-     }}
-.top{
-   display: flex;
-   
-    justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
 }
 
 
-.top .left{
-height: 25px;
 
+@media only screen and (max-width: 768px) {
+  .testmonials .card {
+    width: 90%;
+    
+  }
 }
-.top .right{
-    height: 25px;
-    }
-.top .user{
-    margin: 20px;
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        object-fit: cover;
-        }
-        @media only screen and (max-width:768px){
-          .top .user{
-                 width: 40px;
-                 height: 40px;
-             }}
-       .center{
-          border-radius: 10px;
-          margin: 40px 0px;
-          
-            padding: 10px;
-            background-color:rgb(233, 215, 219);
-        }
-        @media only screen and (max-width:768px){
-           .center{
-                 font-size: 12px;
-                 padding: 5px;
-                 margin-bottom: 20px;
-                 
-                 
-             }}
-        .bottom{
-            
-            
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-        }
-        @media only screen and (max-width:768px){
-           .bottom{
-                 align-items:center;
-                display: flex;
-                 justify-content: space-between;
-                 flex-direction: row;
-                margin-bottom: 15px;
-                
-             }}
-        .bottom h4{
-            color: gray;
-            
-        }
-        @media only screen and (max-width:768px){
-            .bottom h4{
-                font-size: 13px;
-            }
-        }
-        .bottom h3{
-            font-weight:normal;
-        }
-        
+
+.testmonials .card.featured {
+  border: 2px solid crimson;
+}
+
+.testmonials .card:hover {
+  transform: scale(1.05);
+}
+
+.testmonials .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.testmonials .top .user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .testmonials .top .user {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.testmonials .top .right {
+  width: 25px;
+  height: 25px;
+}
+
+.center {
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f5dede9a;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .testmonials .center {
+    font-size: 12px;
+  }
+}
+
+.testmonials .bottom {
+  text-align: center;
+}
+
+.testmonials .bottom h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .testmonials .bottom h3 {
+    font-size: 16px;
+  }
+}
+
+.testmonials .bottom h4 {
+  font-size: 14px;
+  color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .testmonials .bottom h4 {
+    font-size: 12px;
+  }
+}

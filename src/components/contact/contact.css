@@ -2,6 +2,7 @@
     background-color:white;
     
        display: flex;
+    
 }
 @media only screen and (max-width:1140px){
     .contact{
@@ -12,10 +13,12 @@
     flex: 1;
 }
 .left img{
-height: 80%;
+height: 70%;
+
 overflow: hidden;
 }
 @media only screen and (max-width:768px){
+    
     .left img{ height: 100%;
 }}
 .contact .right{

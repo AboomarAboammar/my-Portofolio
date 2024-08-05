@@ -1,7 +1,10 @@
 import React,{useEffect, useRef} from 'react';
+import myImg from "../assets/WhatsApp Image 2023-01-03 at 14.44.43 (2).jpg";
+import arrowButtom from "../assets/R.png"
 import { init } from 'ityped';
 import "./intro.css";
 const Intro = () => {
+  
   const textRef =useRef();
   const skillRef =useRef();
   const shoudlog =useRef(true);
@@ -13,7 +16,7 @@ const Intro = () => {
         {  showCursor: true,
           backDelay:  1500,
           backSpeed:  70,
-          strings: ["Designer","Frontend","Reactjs Devolper"],
+          strings: ["  Responsive designe","  Frontend(react and next)js","  React Devolper"],
           
             });
     };
@@ -23,8 +26,8 @@ const Intro = () => {
         {  showCursor: true,
           backDelay:  1500,
           backSpeed:  70,
-          strings: ["html-html5","css-css3-bootstrap","js-reactjs-nextjs...."],
-          
+          strings: ["  Languages & Technologies:","  HTML-HTML5","  CSS-CSS3","  JavaScript-ECMAScript","  Tools & Libraries:","  Bootstrap, React Bootstrap","  Font Awesome, Google Icons","  Cookie Universal, Git","  Other Skills:","  Performance Optimization","  Object-Oriented Programming (OOP), JSON, AJAX","  Testing and Debugging","  Responsive Design, Animation"],
+         
             });
     }
     
@@ -36,7 +39,7 @@ const Intro = () => {
       
      <div className='left'>
       <div className='imgContainer'>
-        <img src='assets/WhatsApp Image 2023-01-03 at 14.44.43.jpg'alt='webdevolper'/>
+        <img src={myImg}alt='webdevolper'/>
       </div>
      </div>
      <div className='right'>
@@ -48,7 +51,7 @@ const Intro = () => {
         
       </div>
       <a href='#portofolio'>
-        <img src='assets/R.png'alt='down'/>
+        <img src={arrowButtom}alt='down'/>
       </a>
      </div>
     
