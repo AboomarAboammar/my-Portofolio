@@ -15,10 +15,10 @@ const Contact = () => {
     setMessage(false);
 
     emailjs.send(
-      "service_bt39y7n",
-      "template_buutmrx",
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       formData,
-      "On5TfdUjihYKLmXi8"
+      process.env.REACT_APP_EMAILJS_USER_ID
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
